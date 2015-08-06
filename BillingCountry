@@ -1,0 +1,31 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"definitions": {
+	    "billingCountries" : {
+	        "type": "array",
+	        "properties": {
+	            "billingCountry" : {
+	                "type":"object",
+	                "properties": {
+	                    "countryCode" : {
+	                        "type": { "$ref": "payment.schema.json#/definitions/billingAddress/properties/countryCode" }
+					             },
+					             "countryName" : {
+	                        "type": "string",
+					                "description": "..."
+					             }
+					         }
+					       },
+					       "defaultBillingCountryCode" : {
+					           "type": { "$ref": "payment.schema.json#/definitions/billingAddress/properties/countryCode" }
+					       }
+					   }
+					}
+			}
+	}
+			
+					               
+	                    
+	                
+	            
+	    
